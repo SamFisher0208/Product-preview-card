@@ -57,9 +57,9 @@ h1 {
     
 }
 
-.card-info h1 {
+.name {
     line-height: 1.9rem;
-    /* padding-bottom: 20px; */
+    color: var(--dark-blue);
 }
 
 .title {
