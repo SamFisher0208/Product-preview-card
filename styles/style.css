@@ -39,7 +39,6 @@ i {
     font-weight: 700;
     font-size: 15px;
     color: var(--white);
-    margin-right: 10px;
 }
 
 .btn:hover {
@@ -62,10 +61,16 @@ i {
     height: 465px;
 }
 
-.card img {
+/* For larger screens */
+.image-desktop {
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10px 0px 0px 10px;
     width: 100%;
     height: 100%;
+    padding-right: 200px;
 }
 
 .card-info {
@@ -115,8 +120,41 @@ i {
     text-decoration: line-through;
     color: var(--gray-blue);
     font-size: 15px;
-    margin-right: 60px;
+    margin-right: 40px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 653px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 120px;
+        padding-bottom: 700px;
+    }
+
+    .card img {
+        display: none;
+    }
+
+    .image-desktop {
+        display: none;
+    }
+
+    .image-mobile {
+        background-image: url(/images/image-product-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 250px; /* Adjust the height as per your design */
+    }
+}
