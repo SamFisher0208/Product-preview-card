@@ -134,10 +134,14 @@ i {
     }
 
     .card {
-        display: flex;
         flex-wrap: wrap;
         margin: 120px;
         padding-bottom: 700px;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
     }
 
     .card img {
